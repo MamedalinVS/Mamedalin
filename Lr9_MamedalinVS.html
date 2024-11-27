@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mainContainer">
+        <div class="background"></div>
+        <div class="firstContainer">
+            <div class="leftBoxFirstContainer">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+                <div>
+                    <h1>С помощью нас</h1>
+                    <h1>вы сможете создать то, о чем</h1>
+                    <h1 style="font-size: 50px;">желаете!</h1>
+                    <p>Наши возможности + опыт позволят Вам достичь</p>
+                    <p>огромного успеха. Мы верим в вас! И знаем это на</p>
+                    <p>все 100%. Вас не остановить!</p>
+                    <button id="changeStylesButton">Узнать больше...</button>
+                </div>
+            </div>
+            <div class="rightBoxFirstContainer">
+                <img class="phone" src="img/header-img.png">
+            </div>
+        </div>
+        <div class="secondContainer">
+            <div class="headSecondContainer">
+                <h2>Что Вам необходимо?</h2>
+            </div>
+            <div class="boxsSecondContainer">
+                <div class="boxSecondContainer">
+                    <div class="sizeBoxImg"><img src="img/f3.png" alt="icon1"></div>
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="boxSecondContainer">
+                    <div class="sizeBoxImg"><img src="img/f4.png" alt="icon2"></div>
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="boxSecondContainer">
+                    <div class="sizeBoxImg"><img src="img/f5.png" alt="icon3"></div>
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="marathonRegistrationContainer">
+            <h2>Регистрация на полумарафон</h2>
+            <form id="marathonForm">
+                <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                <input type="email" name="email" id="email" placeholder="Ваш E-mail" required>
+                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+                <select name="distance" id="distance" required>
+                    <option value="" disabled selected>Выберите дистанцию</option>
+                    <option value="1km">1 км</option>
+                    <option value="5km">5 км</option>
+                    <option value="10km">10 км</option>
+                    <option value="21km">21 км</option>
+                </select>
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        
+            <div id="errorMessages"></div>
+        </div>
+        
+    <div class="thirdContainer">
+    <h2>Форма заказа обратного звонка</h2>
+    <form>
+        <input type="text" name="name" id="callbackName" placeholder="Имя" required minlength="2" maxlength="50" title="Введите от 2 до 50 символов">
+        <input type="email" name="email" id="callbackEmail" placeholder="Введите свой E-mail" required title="Введите корректный адрес электронной почты">
+        <input type="tel" name="phone" id="callbackPhone" placeholder="Телефон" required pattern="^\+?[78][-(\s]*\d{3}[-)\s]*\d{3}[-\s]*\d{2}[-\s]*\d{2}$" 
+               title="Введите телефон в формате +7 (123) 456-78-90 или 81234567890">
+        <textarea name="message" id="callbackMessage" placeholder="Какая тема вас интересует?" maxlength="300" title="Максимум 300 символов"></textarea>
+        <button type="button" id="callbackButton">Отправить вопрос!</button>
+    </form>
+    </div>
+        <div class="fourthContainer">
+            <p>© Все на этом сайте защищено</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
